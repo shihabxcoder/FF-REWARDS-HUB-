@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="bn" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FF REWARDSHUB - প্রিমিয়াম রেওয়ার্ডস প্ল্যাটফর্ম</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <script src="tailwind.config.js"></script>
+    
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+    
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="text-gray-200 antialiased relative">
+
+    <nav class="fixed w-full z-50 glass-card border-b-0 border-white/10 transition-all duration-300 shadow-lg shadow-black/50" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex items-center gap-2 cursor-pointer">
+                    <i data-lucide="flame" class="text-ff-orange w-8 h-8"></i>
+                    <span class="font-heading font-bold text-xl md:text-2xl tracking-wider text-white">FF <span class="text-ff-orange">REWARDSHUB</span></span>
+                </div>
+                
+                <div class="hidden md:flex items-center space-x-8 font-medium">
+                    <a href="#home" class="text-white hover:text-ff-orange transition-colors">হোম</a>
+                    <a href="#features" class="text-gray-300 hover:text-ff-orange transition-colors">ফিচারসমূহ</a>
+                    <a href="#pricing" class="text-gray-300 hover:text-ff-orange transition-colors">সাবস্ক্রিপশন</a>
+                    <a href="#account" class="text-gray-300 hover:text-ff-orange transition-colors">অ্যাকাউন্ট</a>
+                    <button class="bg-gradient-to-r from-ff-orange to-red-600 text-white px-6 py-2.5 rounded-full font-semibold hover:shadow-[0_0_20px_rgba(255,87,34,0.6)] transition-all transform hover:-translate-y-0.5">
+                        লগইন / সাইন আপ
+                    </button>
+                </div>
+
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-gray-300 hover:text-white focus:outline-none p-2 bg-white/5 rounded-lg border border-white/10">
+                        <i data-lucide="menu" class="w-6 h-6"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <div id="mobile-menu" class="hidden absolute w-full left-0 top-20 bg-[#020617] border-b border-white/10 shadow-2xl z-40">
+            <div class="px-4 pt-4 pb-6 space-y-2">
+                <a href="#home" class="mobile-link block px-4 py-3 text-white font-medium hover:bg-white/5 rounded-lg transition-colors">হোম</a>
+                <a href="#features" class="mobile-link block px-4 py-3 text-gray-300 font-medium hover:bg-white/5 rounded-lg transition-colors">ফিচারসমূহ</a>
+                <a href="#pricing" class="mobile-link block px-4 py-3 text-gray-300 font-medium hover:bg-white/5 rounded-lg transition-colors">সাবস্ক্রিপশন</a>
+                <a href="#account" class="mobile-link block px-4 py-3 text-gray-300 font-medium hover:bg-white/5 rounded-lg transition-colors">অ্যাকাউন্ট</a>
+                <div class="pt-4 border-t border-white/10 mt-2">
+                    <button class="w-full bg-gradient-to-r from-ff-orange to-red-600 text-white px-6 py-3.5 rounded-xl font-bold shadow-lg flex justify-center items-center gap-2">
+                        <i data-lucide="user" class="w-5 h-5"></i> লগইন / সাইন আপ
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden">
+        <div class="absolute top-1/4 left-10 animate-float opacity-30 text-ff-yellow">
+            <i data-lucide="gem" class="w-16 h-16"></i>
+        </div>
+        <div class="absolute bottom-1/4 right-10 animate-float opacity-30 text-ff-orange" style="animation-delay: 2s;">
+            <i data-lucide="box" class="w-20 h-20"></i>
+        </div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                
+                <div class="text-center lg:text-left">
+                    
+                    <div class="flex flex-wrap items-center justify-center lg:justify-start gap-3 mb-4">
+                        <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-500/10 border border-blue-500/20 text-xs font-semibold text-blue-400">
+                            <i data-lucide="gamepad-2" class="w-4 h-4"></i> Free Fire
+                        </div>
+                        <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-purple-500/10 border border-purple-500/20 text-xs font-semibold text-purple-400">
+                            <i data-lucide="monitor-play" class="w-4 h-4"></i> Free Fire Max
+                        </div>
+                    </div>
+
+                    <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-card border-ff-orange/30 text-sm font-medium text-ff-orange mb-6">
+                        <span class="relative flex h-3 w-3">
+                          <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-ff-orange opacity-75"></span>
+                          <span class="relative inline-flex rounded-full h-3 w-3 bg-ff-orange"></span>
+                        </span>
+                        ভার্সন ২.০ এখন লাইভ!
+                    </div>
+                    
+                    <h1 class="text-4xl md:text-5xl lg:text-7xl font-heading font-extrabold text-white leading-tight mb-6">
+                        আলটিমেট <br>
+                        <span class="text-gradient">রেওয়ার্ডস ক্লেইম</span> <br>
+                        প্ল্যাটফর্ম
+                    </h1>
+                    <p class="text-lg md:text-xl text-gray-400 mb-8 max-w-2xl mx-auto lg:mx-0">
+                        কোনো ঝামেলা ছাড়াই প্রতিদিন এক্সক্লুসিভ বান্ডেল, ডায়মন্ড এবং গান স্কিন ক্লেইম করুন। আমাদের প্রিমিয়াম সাআস সিস্টেমে আপনার একাউন্ট ১০০% নিরাপদ ও সুরক্ষিত।
+                    </p>
+                    
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                        <button onclick="document.getElementById('claim-section').scrollIntoView()" class="animate-pulse-glow bg-gradient-to-r from-ff-orange to-red-600 text-white px-8 py-4 rounded-xl font-bold text-lg hover:scale-105 transition-transform flex items-center justify-center gap-2">
+                            <i data-lucide="crosshair" class="w-5 h-5"></i>
+                            রেওয়ার্ড ক্লেইম করুন
+                        </button>
+                        <button class="glass-card text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-white/10 transition-colors flex items-center justify-center gap-2 border border-white/20">
+                            <i data-lucide="play-circle" class="w-5 h-5"></i>
+                            কিভাবে কাজ করে
+                        </button>
+                    </div>
+
+                    <div class="mt-10 flex items-center justify-center lg:justify-start gap-6 text-sm text-gray-500 font-medium">
+                        <div class="flex items-center gap-1"><i data-lucide="shield-check" class="w-4 h-4 text-green-500"></i> ১০০% নিরাপদ</div>
+                        <div class="flex items-center gap-1"><i data-lucide="zap" class="w-4 h-4 text-yellow-500"></i> ইনস্ট্যান্ট ডেলিভারি</div>
+                        <div class="flex items-center gap-1"><i data-lucide="users" class="w-4 h-4 text-blue-500"></i> ১ লক্ষ+ ইউজার</div>
+                    </div>
+                </div>
+
+                <div class="relative lg:ml-auto w-full max-w-md mx-auto" id="claim-section">
+                    <div class="absolute -inset-1 bg-gradient-to-r from-ff-orange to-ff-yellow rounded-2xl blur opacity-30 animate-pulse"></div>
+                    <div class="relative glass-card rounded-2xl p-6 border border-white/10 shadow-2xl">
+                        <div class="flex justify-between items-center mb-4">
+                            <h3 class="text-xl font-bold text-white font-heading">কুইক ক্লেইম প্যানেল</h3>
+                            <span class="text-xs font-semibold bg-green-500/20 text-green-500 px-2 py-1 rounded">অনলাইন</span>
+                        </div>
+                        
+                        <div class="flex overflow-x-auto gap-2 pb-3 mb-4 no-scrollbar border-b border-white/10" id="categoryTabs">
+                            <button class="tab-btn active px-4 py-2 rounded-xl bg-ff-orange/20 text-ff-orange border border-ff-orange font-semibold text-sm whitespace-nowrap transition-all" data-target="weapon-items">
+                                উইপন
+                            </button>
+                            <button class="tab-btn px-4 py-2 rounded-xl bg-white/5 text-gray-400 border border-white/10 hover:bg-white/10 font-semibold text-sm whitespace-nowrap transition-all" data-target="emote-items">
+                                ইমোটস
+                            </button>
+                            <button class="tab-btn px-4 py-2 rounded-xl bg-white/5 text-gray-400 border border-white/10 hover:bg-white/10 font-semibold text-sm whitespace-nowrap transition-all" data-target="bundle-items">
+                                বান্ডেল
+                            </button>
+                            <button class="tab-btn px-4 py-2 rounded-xl bg-white/5 text-gray-400 border border-white/10 hover:bg-white/10 font-semibold text-sm whitespace-nowrap transition-all" data-target="diamond-items">
+                                ডায়মন্ড
+                            </button>
+                        </div>
+
+                        <div id="item-containers" class="min-h-[300px]">
+                            
+                            <div id="weapon-items" class="tab-content grid grid-cols-2 gap-4 animate-[fadeIn_0.3s_ease-in-out]">
+                                
+                                <div class="item-card bg-white/5 p-3 rounded-xl border border-white/5">
+                                    <div class="item-image-container h-24 w-full mb-3 bg-gray-900 border border-white/10">
+                                        <img src="https://staticg.sportskeeda.com/editor/2021/08/ef60b-16286795665103-800.jpg?w=640" alt="Draco AK47" class="item-image">
+                                    </div>
+                                    <h4 class="text-white font-bold text-sm mb-1 truncate">Draco AK47</h4>
+                                    <p class="text-xs text-ff-yellow mb-3">Evo Gun</p>
+                                    <button onclick="handleClaim(event)" class="w-full py-2 bg-gradient-to-r from-ff-orange to-red-600 text-white text-sm font-bold rounded-lg hover:shadow-[0_0_15px_rgba(255,87,34,0.5)] transition-all">ক্লেইম</button>
+                                </div>
+
+                                <div class="item-card bg-white/5 p-3 rounded-xl border border-white/5">
+                                    <div class="item-image-container h-24 w-full mb-3 bg-gray-900 border border-white/10">
+                                        <img src="https://placehold.co/100x100/7f1d1d/ffffff?text=M1014" alt="M1014 Green" class="item-image" onerror="this.src='https://placehold.co/100x100/7f1d1d/ffffff?text=Weapon'">
+                                    </div>
+                                    <h4 class="text-white font-bold text-sm mb-1 truncate">M1014 Green</h4>
+                                    <p class="text-xs text-ff-yellow mb-3">Legendary</p>
+                                    <button onclick="handleClaim(event)" class="w-full py-2 bg-gradient-to-r from-ff-orange to-red-600 text-white text-sm font-bold rounded-lg hover:shadow-[0_0_15px_rgba(255,87,34,0.5)] transition-all">ক্লেইম</button>
+                                </div>
+
+                                <div class="item-card bg-white/5 p-3 rounded-xl border border-white/5">
+                                    <div class="item-image-container h-24 w-full mb-3 bg-gray-900 border border-white/10">
+                                        <img src="https://staticg.sportskeeda.com/editor/2021/10/b219d-16339736804132-800.jpg?w=640" alt="SCAR Cupid" class="item-image">
+                                    </div>
+                                    <h4 class="text-white font-bold text-sm mb-1 truncate">SCAR Cupid</h4>
+                                    <p class="text-xs text-ff-yellow mb-3">Mythic</p>
+                                    <button onclick="handleClaim(event)" class="w-full py-2 bg-gradient-to-r from-ff-orange to-red-600 text-white text-sm font-bold rounded-lg hover:shadow-[0_0_15px_rgba(255,87,34,0.5)] transition-all">ক্লেইম</button>
+                                </div>
+
+                                <div class="item-card bg-white/5 p-3 rounded-xl border border-white/5">
+                                    <div class="item-image-container h-24 w-full mb-3 bg-gray-900 border border-white/10">
+                                        <img src="https://placehold.co/100x100/78350f/ffffff?text=MP40" alt="MP40 Cobra" class="item-image" onerror="this.src='https://placehold.co/100x100/78350f/ffffff?text=Weapon'">
+                                    </div>
+                                    <h4 class="text-white font-bold text-sm mb-1 truncate">MP40 Cobra</h4>
+                                    <p class="text-xs text-ff-yellow mb-3">Evo Gun</p>
+                                    <button onclick="handleClaim(event)" class="w-full py-2 bg-gradient-to-r from-ff-orange to-red-600 text-white text-sm font-bold rounded-lg hover:shadow-[0_0_15px_rgba(255,87,34,0.5)] transition-all">ক্লেইম</button>
+                                </div>
+                            </div>
+
+                            <div id="emote-items" class="tab-content hidden grid grid-cols-2 gap-4 animate-[fadeIn_0.3s_ease-in-out]">
+                                <div class="item-card bg-white/5 p-3 rounded-xl border border-white/5">
+                                    <div class="item-image-container h-24 w-full mb-3 bg-gray-900 border border-white/10">
+                                        <img src="https://placehold.co/100x100/831843/ffffff?text=LOL" alt="LOL Emote" class="item-image" onerror="this.src='https://placehold.co/100x100/831843/ffffff?text=Emote'">
+                                    </div>
+                                    <h4 class="text-white font-bold text-sm mb-1 truncate">LOL Emote</h4>
+                                    <p class="text-xs text-gray-400 mb-3">Epic</p>
+                                    <button onclick="handleClaim(event)" class="w-full py-2 bg-gradient-to-r from-ff-orange to-red-600 text-white text-sm font-bold rounded-lg hover:shadow-[0_0_15px_rgba(255,87,34,0.5)] transition-all">ক্লেইম</button>
+                                </div>
+
+                                <div class="item-card bg-white/5 p-3 rounded-xl border border-white/5">
+                                    <div class="item-image-container h-24 w-full mb-3 bg-gray-900 border border-white/10">
+                                        <img src="https://placehold.co/100x100/312e81/ffffff?text=Pirate" alt="Pirate Flag" class="item-image" onerror="this.src='https://placehold.co/100x100/312e81/ffffff?text=Emote'">
+                                    </div>
+                                    <h4 class="text-white font-bold text-sm mb-1 truncate">Pirate Flag</h4>
+                                    <p class="text-xs text-gray-400 mb-3">Legendary</p>
+                                    <button onclick="handleClaim(event)" class="w-full py-2 bg-gradient-to-r from-ff-orange to-red-600 text-white text-sm font-bold rounded-lg hover:shadow-[0_0_15px_rgba(255,87,34,0.5)] transition-all">ক্লেইম</button>
+                                </div>
+                            </div>
+
+                            <div id="bundle-items" class="tab-content hidden grid grid-cols-2 gap-4 animate-[fadeIn_0.3s_ease-in-out]">
+                                <div class="item-card bg-white/5 p-3 rounded-xl border border-white/5">
+                                    <div class="item-image-container h-24 w-full mb-3 bg-gray-900 border border-white/10">
+                                        <img src="https://placehold.co/100x100/450a0a/ffffff?text=Cobra" alt="Cobra Bundle" class="item-image" onerror="this.src='https://placehold.co/100x100/450a0a/ffffff?text=Bundle'">
+                                    </div>
+                                    <h4 class="text-white font-bold text-sm mb-1 truncate">Cobra Bundle</h4>
+                                    <p class="text-xs text-ff-yellow mb-3">Legendary</p>
+                                    <button onclick="handleClaim(event)" class="w-full py-2 bg-gradient-to-r from-ff-orange to-red-600 text-white text-sm font-bold rounded-lg hover:shadow-[0_0_15px_rgba(255,87,34,0.5)] transition-all">ক্লেইম</button>
+                                </div>
+
+                                <div class="item-card bg-white/5 p-3 rounded-xl border border-white/5">
+                                    <div class="item-image-container h-24 w-full mb-3 bg-gray-900 border border-white/10">
+                                        <img src="https://placehold.co/100x100/3b0764/ffffff?text=Criminal" alt="Criminal Blue" class="item-image" onerror="this.src='https://placehold.co/100x100/3b0764/ffffff?text=Bundle'">
+                                    </div>
+                                    <h4 class="text-white font-bold text-sm mb-1 truncate">Criminal Blue</h4>
+                                    <p class="text-xs text-ff-yellow mb-3">Rare</p>
+                                    <button onclick="handleClaim(event)" class="w-full py-2 bg-gradient-to-r from-ff-orange to-red-600 text-white text-sm font-bold rounded-lg hover:shadow-[0_0_15px_rgba(255,87,34,0.5)] transition-all">ক্লেইম</button>
+                                </div>
+                            </div>
+
+                            <div id="diamond-items" class="tab-content hidden grid grid-cols-2 gap-4 animate-[fadeIn_0.3s_ease-in-out]">
+                                <div class="item-card bg-white/5 p-3 rounded-xl border border-white/5">
+                                    <div class="item-image-container h-24 w-full mb-3 bg-gray-900 border border-white/10">
+                                        <img src="https://placehold.co/100x100/164e63/ffffff?text=500+D" alt="500 Diamonds" class="item-image" onerror="this.src='https://placehold.co/100x100/164e63/ffffff?text=Diamond'">
+                                    </div>
+                                    <h4 class="text-white font-bold text-sm mb-1 truncate">500 Diamonds</h4>
+                                    <p class="text-xs text-cyan-300 mb-3">+ 50 Bonus</p>
+                                    <button onclick="handleClaim(event)" class="w-full py-2 bg-gradient-to-r from-ff-orange to-red-600 text-white text-sm font-bold rounded-lg hover:shadow-[0_0_15px_rgba(255,87,34,0.5)] transition-all">ক্লেইম</button>
+                                </div>
+
+                                <div class="item-card bg-white/5 p-3 rounded-xl border border-white/5">
+                                    <div class="item-image-container h-24 w-full mb-3 bg-gray-900 border border-white/10">
+                                        <img src="https://placehold.co/100x100/0f766e/ffffff?text=1000+D" alt="1000 Diamonds" class="item-image" onerror="this.src='https://placehold.co/100x100/0f766e/ffffff?text=Diamond'">
+                                    </div>
+                                    <h4 class="text-white font-bold text-sm mb-1 truncate">1000 Diamonds</h4>
+                                    <p class="text-xs text-cyan-300 mb-3">+ 100 Bonus</p>
+                                    <button onclick="handleClaim(event)" class="w-full py-2 bg-gradient-to-r from-ff-orange to-red-600 text-white text-sm font-bold rounded-lg hover:shadow-[0_0_15px_rgba(255,87,34,0.5)] transition-all">ক্লেইম</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="w-full bg-white/5 border-y border-white/10 py-3 overflow-hidden flex relative z-10">
+        <div class="flex items-center gap-4 text-sm font-medium whitespace-nowrap animate-marquee">
+            <span class="text-gray-400"><span class="text-white font-bold">UID 109***</span> জাস্ট ক্লেইম করেছে <span class="text-cyan-400">1000 Diamonds</span> <span class="text-green-500 text-xs ml-1">✓ Success</span></span>
+            <span class="text-gray-500 mx-4">|</span>
+            <span class="text-gray-400"><span class="text-white font-bold">UID 283***</span> জাস্ট ক্লেইম করেছে <span class="text-ff-orange">Cobra Bundle</span> <span class="text-green-500 text-xs ml-1">✓ Success</span></span>
+            <span class="text-gray-500 mx-4">|</span>
+            <span class="text-gray-400"><span class="text-white font-bold">UID 556***</span> জাস্ট ক্লেইম করেছে <span class="text-pink-400">Lol Emote</span> <span class="text-green-500 text-xs ml-1">✓ Success</span></span>
+            <span class="text-gray-500 mx-4">|</span>
+            <span class="text-gray-400"><span class="text-white font-bold">UID 890***</span> জাস্ট ক্লেইম করেছে <span class="text-purple-400">Draco AK47</span> <span class="text-green-500 text-xs ml-1">✓ Success</span></span>
+            <span class="text-gray-500 mx-4">|</span>
+            <span class="text-gray-400"><span class="text-white font-bold">UID 109***</span> জাস্ট ক্লেইম করেছে <span class="text-cyan-400">500 Diamonds</span> <span class="text-green-500 text-xs ml-1">✓ Success</span></span>
+            <span class="text-gray-500 mx-4">|</span>
+            <span class="text-gray-400"><span class="text-white font-bold">UID 283***</span> জাস্ট ক্লেইম করেছে <span class="text-ff-orange">Criminal Blue</span> <span class="text-green-500 text-xs ml-1">✓ Success</span></span>
+        </div>
+    </div>
+
+    <section id="features" class="py-20 relative z-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-ff-orange font-bold tracking-wide uppercase text-sm mb-2">কেন আমরা সেরা?</h2>
+                <h3 class="text-3xl md:text-4xl font-heading font-bold text-white">অ্যাডভান্সড সাআস ফিচারসমূহ</h3>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="glass-card p-8 rounded-2xl hover:-translate-y-2 transition-transform duration-300 border-t border-t-ff-orange/50">
+                    <div class="w-14 h-14 rounded-xl bg-ff-orange/20 flex items-center justify-center mb-6 text-ff-orange">
+                        <i data-lucide="zap" class="w-8 h-8"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-white mb-3">ইনস্ট্যান্ট ডেলিভারি এপিআই</h4>
+                    <p class="text-gray-400 leading-relaxed">
+                        আমাদের ডিরেক্ট এপিআই ইন্টিগ্রেশনের মাধ্যমে ক্লেইম করার সাথে সাথেই আপনার ইন-গেম মেইলে রেওয়ার্ড পৌঁছে যাবে।
+                    </p>
+                </div>
+                
+                <div class="glass-card p-8 rounded-2xl hover:-translate-y-2 transition-transform duration-300 border-t border-t-green-500/50">
+                    <div class="w-14 h-14 rounded-xl bg-green-500/20 flex items-center justify-center mb-6 text-green-500">
+                        <i data-lucide="shield-check" class="w-8 h-8"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-white mb-3">অ্যান্টি-ব্যান সিকিউরিটি</h4>
+                    <p class="text-gray-400 leading-relaxed">
+                        আমরা কোনো থার্ড-পার্টি হ্যাক ব্যবহার করি না। এটি সম্পূর্ণ অফিসিয়াল প্রোমোশনাল সিস্টেমের ওপর ভিত্তি করে তৈরি।
+                    </p>
+                </div>
+
+                <div class="glass-card p-8 rounded-2xl hover:-translate-y-2 transition-transform duration-300 border-t border-t-purple-500/50">
+                    <div class="w-14 h-14 rounded-xl bg-purple-500/20 flex items-center justify-center mb-6 text-purple-400">
+                        <i data-lucide="repeat" class="w-8 h-8"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-white mb-3">অটোমেটেড ডেইলি রেওয়ার্ডস</h4>
+                    <p class="text-gray-400 leading-relaxed">
+                        আমাদের সাবস্ক্রিপশন প্ল্যান নিলে আপনাকে প্রতিদিন লগইন করতে হবে না। অটোমেটিক আপনার আইডিতে রেওয়ার্ড সেন্ড হবে।
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="pricing" class="py-20 relative z-10 bg-black/30">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-ff-orange font-bold tracking-wide uppercase text-sm mb-2">সাবস্ক্রিপশন প্ল্যান</h2>
+                <h3 class="text-3xl md:text-4xl font-heading font-bold text-white mb-4">আপনার জন্য সঠিক প্ল্যানটি বেছে নিন</h3>
+                <p class="text-gray-400 max-w-2xl mx-auto">গিল্ড লিডার বা রেগুলার গেমারদের জন্য আমাদের রয়েছে মান্থলি অটো-ক্লেইম সাবস্ক্রিপশন ব্যবস্থা।</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                <div class="glass-card p-8 rounded-3xl border border-white/5 relative flex flex-col">
+                    <h4 class="text-xl font-semibold text-gray-300 mb-2">বেসিক</h4>
+                    <div class="flex items-baseline gap-2 mb-6">
+                        <span class="text-4xl font-heading font-bold text-white">৳০</span>
+                        <span class="text-gray-500">/আজীবন</span>
+                    </div>
+                    <ul class="space-y-4 mb-8 flex-1 text-gray-400">
+                        <li class="flex items-center gap-3"><i data-lucide="check" class="w-5 h-5 text-green-500"></i> ম্যানুয়াল ক্লেইম</li>
+                        <li class="flex items-center gap-3"><i data-lucide="check" class="w-5 h-5 text-green-500"></i> সাধারণ বান্ডেল ও ভাউচার</li>
+                        <li class="flex items-center gap-3"><i data-lucide="x" class="w-5 h-5 text-red-500"></i> কোনো প্রায়োরিটি সাপোর্ট নেই</li>
+                    </ul>
+                    <button class="w-full py-3 rounded-xl border border-white/20 text-white font-semibold hover:bg-white/10 transition-colors">
+                        ফ্রি অ্যাকাউন্ট খুলুন
+                    </button>
+                </div>
+
+                <div class="glass-card p-8 rounded-3xl border-2 border-ff-orange relative flex flex-col transform md:-translate-y-4 shadow-[0_0_30px_rgba(255,87,34,0.15)] bg-gradient-to-b from-white/5 to-ff-orange/5">
+                    <div class="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-gradient-to-r from-ff-orange to-red-600 text-white px-4 py-1 rounded-full text-xs font-bold uppercase tracking-wide">
+                        সবচেয়ে জনপ্রিয়
+                    </div>
+                    <h4 class="text-xl font-semibold text-ff-orange mb-2">এলিট প্রো</h4>
+                    <div class="flex items-baseline gap-2 mb-6">
+                        <span class="text-4xl font-heading font-bold text-white">৳২৯৯</span>
+                        <span class="text-gray-500">/মাসিক</span>
+                    </div>
+                    <ul class="space-y-4 mb-8 flex-1 text-gray-300">
+                        <li class="flex items-center gap-3"><i data-lucide="check" class="w-5 h-5 text-ff-orange"></i> অটোমেটেড ডেইলি ক্লেইম</li>
+                        <li class="flex items-center gap-3"><i data-lucide="check" class="w-5 h-5 text-ff-orange"></i> এক্সক্লুসিভ ইভো গান স্কিন</li>
+                        <li class="flex items-center gap-3"><i data-lucide="check" class="w-5 h-5 text-ff-orange"></i> ২৪/৭ ভিআইপি সাপোর্ট</li>
+                    </ul>
+                    <button class="w-full py-3 rounded-xl bg-gradient-to-r from-ff-orange to-red-600 text-white font-bold hover:shadow-lg transition-all hover:scale-[1.02]">
+                        আপগ্রেড টু প্রো
+                    </button>
+                </div>
+
+                <div class="glass-card p-8 rounded-3xl border border-white/5 relative flex flex-col md:col-span-2 lg:col-span-1">
+                    <h4 class="text-xl font-semibold text-purple-400 mb-2">গিল্ড মাস্টার</h4>
+                    <div class="flex items-baseline gap-2 mb-6">
+                        <span class="text-4xl font-heading font-bold text-white">৳৯৯৯</span>
+                        <span class="text-gray-500">/মাসিক</span>
+                    </div>
+                    <ul class="space-y-4 mb-8 flex-1 text-gray-400">
+                        <li class="flex items-center gap-3"><i data-lucide="check" class="w-5 h-5 text-purple-500"></i> ৫০ জন মেম্বার ম্যানেজমেন্ট</li>
+                        <li class="flex items-center gap-3"><i data-lucide="check" class="w-5 h-5 text-purple-500"></i> বাল্ক রেওয়ার্ড সেন্ড এপিআই</li>
+                        <li class="flex items-center gap-3"><i data-lucide="check" class="w-5 h-5 text-purple-500"></i> কাস্টম গিভওয়ে প্যানেল</li>
+                    </ul>
+                    <button class="w-full py-3 rounded-xl border border-purple-500/50 text-white font-semibold hover:bg-purple-500/20 transition-colors">
+                        যোগাযোগ করুন
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="border-t border-white/10 bg-[#020617] pt-16 pb-8 relative z-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-gray-600">
+                <p>&copy; 2026 FF REWARDSHUB. All rights reserved.</p>
+                <p>Disclaimer: This is a demo SaaS landing page canvas.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div id="processingModal" class="fixed inset-0 z-[100] hidden items-center justify-center px-4">
+        <div class="absolute inset-0 bg-black/80 backdrop-blur-sm" onclick="closeModal()"></div>
+        <div class="relative glass-card border border-white/20 p-8 rounded-2xl w-full max-w-sm text-center transform scale-95 opacity-0 transition-all duration-300 shadow-2xl" id="modalContent">
+            
+            <div id="stepProcessing" class="block">
+                <div class="inline-block relative w-16 h-16 mb-4">
+                    <div class="absolute inset-0 border-4 border-white/10 rounded-full"></div>
+                    <div class="absolute inset-0 border-4 border-ff-orange rounded-full border-t-transparent animate-spin"></div>
+                    <i data-lucide="server" class="absolute inset-0 m-auto w-6 h-6 text-white animate-pulse"></i>
+                </div>
+                <h3 class="text-xl font-bold text-white mb-2">সার্ভারের সাথে কানেক্ট করা হচ্ছে...</h3>
+                <p class="text-sm text-gray-400">অনুগ্রহ করে অপেক্ষা করুন। আইডি চেক করা হচ্ছে।</p>
+            </div>
+
+            <div id="stepError" class="hidden">
+                <div class="w-16 h-16 rounded-full bg-red-500/20 border border-red-500/30 text-red-500 flex items-center justify-center mx-auto mb-4 animate-pulse">
+                    <i data-lucide="alert-triangle" class="w-8 h-8"></i>
+                </div>
+                <h3 class="text-xl font-bold text-white mb-2">ক্লেইম ব্যর্থ হয়েছে!</h3>
+                <p class="text-sm text-gray-400 mb-6">আপনার গেম আইডি (UID) আমাদের সিস্টেমে <span class="text-red-400 font-semibold">bind বা রেজিস্টার করা নেই</span>। দয়া করে আগে একটি অ্যাকাউন্ট তৈরি করুন।</p>
+                
+                <div class="flex flex-col gap-3">
+                    <button class="w-full bg-gradient-to-r from-ff-orange to-red-600 text-white font-bold py-3 rounded-xl transition-all shadow-[0_0_15px_rgba(255,87,34,0.4)] hover:scale-105">
+                        রেজিস্টার / লগইন করুন
+                    </button>
+                    <button onclick="closeModal()" class="w-full bg-white/5 hover:bg-white/10 text-gray-300 font-semibold py-3 rounded-xl transition-colors border border-white/10">
+                        বন্ধ করুন
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
